@@ -1,0 +1,227 @@
+Session 5 – Strings
+What is a String?
+
+A string is a sequence of characters (text).
+
+Examples:
+
+name = "Ali"
+
+city = 'Islamabad'
+
+message = "Hello World"
+
+Everything inside quotes is a string.
+
+Accessing Characters (Indexing)
+
+Each character has an index.
+
+A  l  i
+0  1  2
+
+Example:
+
+name = "Ali"
+
+print(name[0])
+print(name[1])
+print(name[2])
+
+Output:
+
+A
+l
+i
+
+Negative indexing starts from the end.
+
+A  l  i
+-3 -2 -1
+
+Example:
+
+print(name[-1])
+
+Output:
+
+i
+String Length
+
+Use len().
+
+name = "Pakistan"
+
+print(len(name))
+
+Output:
+
+8
+String Slicing
+
+Syntax:
+
+string[start:end]
+
+The end index is not included.
+
+Example:
+
+text = "Python"
+
+print(text[0:3])
+
+Output:
+
+Pyt
+
+More examples:
+
+text = "Python"
+
+print(text[:3])
+print(text[2:])
+print(text[:])
+print(text[-3:])
+print(text[:-2])
+String Concatenation
+
+Joining strings together.
+
+first = "Ali"
+last = "Akbar"
+
+print(first + " " + last)
+
+Output:
+
+Ali Akbar
+Repeating Strings
+print("Hi " * 3)
+
+Output:
+
+Hi Hi Hi
+Membership Operators
+
+Check whether something exists in a string.
+
+text = "Python"
+
+print("Py" in text)
+
+Output:
+
+True
+print("Java" in text)
+
+Output:
+
+False
+Common String Methods
+upper()
+name = "ali"
+
+print(name.upper())
+
+Output:
+
+ALI
+lower()
+print("HELLO".lower())
+
+Output:
+
+hello
+title()
+print("hello world".title())
+
+Output:
+
+Hello World
+capitalize()
+print("python".capitalize())
+
+Output:
+
+Python
+strip()
+
+Removes spaces from the beginning and end.
+
+name = "   Ali   "
+
+print(name.strip())
+replace()
+text = "I like Java"
+
+print(text.replace("Java", "Python"))
+
+Output:
+
+I like Python
+count()
+text = "banana"
+
+print(text.count("a"))
+
+Output:
+
+3
+find()
+
+Returns the first index of a substring.
+
+text = "Python"
+
+print(text.find("t"))
+
+Output:
+
+2
+
+If not found:
+
+print(text.find("x"))
+
+Output:
+
+-1
+startswith() and endswith()
+text = "Python"
+
+print(text.startswith("Py"))
+print(text.endswith("on"))
+
+Output:
+
+True
+True
+Escape Characters
+print("I'm Ali")
+
+or
+
+print('I\'m Ali')
+
+New line:
+
+print("Hello\nWorld")
+
+Tab:
+
+print("Hello\tWorld")
+Loop Through a String
+word = "Python"
+
+for ch in word:
+    print(ch)
+
+Output:
+
+P
+y
+t
+h
+o
+n

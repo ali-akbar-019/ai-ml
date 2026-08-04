@@ -1,0 +1,219 @@
+Session 6 – Lists
+What is a List?
+
+A list is used to store multiple values in one variable.
+
+Example:
+
+numbers = [10, 20, 30, 40, 50]
+
+Instead of creating five variables:
+
+a = 10
+b = 20
+c = 30
+d = 40
+e = 50
+
+You can simply write:
+
+numbers = [10, 20, 30, 40, 50]
+Lists Can Store Different Data Types
+data = [10, 3.14, "Ali", True]
+
+Although Python allows this, it's usually better to keep similar types together.
+
+Accessing Elements
+
+Lists use indexing just like strings.
+
+fruits = ["Apple", "Banana", "Orange"]
+
+print(fruits[0])
+print(fruits[1])
+print(fruits[2])
+
+Output:
+
+Apple
+Banana
+Orange
+
+Negative indexing:
+
+print(fruits[-1])
+
+Output:
+
+Orange
+Changing Elements
+
+Unlike strings, lists are mutable.
+
+fruits = ["Apple", "Banana", "Orange"]
+
+fruits[1] = "Mango"
+
+print(fruits)
+
+Output:
+
+['Apple', 'Mango', 'Orange']
+List Slicing
+
+Works exactly like strings.
+
+nums = [10,20,30,40,50]
+
+print(nums[1:4])
+
+Output:
+
+[20, 30, 40]
+List Length
+nums = [1,2,3,4]
+
+print(len(nums))
+
+Output:
+
+4
+Adding Elements
+append()
+
+Adds one element at the end.
+
+nums = [1,2,3]
+
+nums.append(4)
+
+print(nums)
+
+Output:
+
+[1,2,3,4]
+insert()
+
+Insert at a specific position.
+
+nums = [10,20,30]
+
+nums.insert(1,15)
+
+print(nums)
+
+Output:
+
+[10,15,20,30]
+extend()
+
+Add another list.
+
+a = [1,2]
+b = [3,4]
+
+a.extend(b)
+
+print(a)
+
+Output:
+
+[1,2,3,4]
+Removing Elements
+remove()
+
+Removes by value.
+
+nums = [1,2,3,4]
+
+nums.remove(3)
+
+print(nums)
+
+Output:
+
+[1,2,4]
+pop()
+
+Removes by index.
+
+nums = [10,20,30]
+
+nums.pop(1)
+
+print(nums)
+
+Output:
+
+[10,30]
+
+Without an index:
+
+nums.pop()
+
+removes the last element.
+
+clear()
+nums.clear()
+
+Makes the list empty.
+
+Searching
+nums = [10,20,30]
+
+print(20 in nums)
+
+Output:
+
+True
+Useful Methods
+count()
+nums = [1,2,2,3,2]
+
+print(nums.count(2))
+
+Output
+
+3
+index()
+nums = [5,10,15]
+
+print(nums.index(10))
+
+Output
+
+1
+sort()
+nums = [5,2,8,1]
+
+nums.sort()
+
+print(nums)
+
+Output
+
+[1,2,5,8]
+
+Descending:
+
+nums.sort(reverse=True)
+reverse()
+nums = [1,2,3]
+
+nums.reverse()
+
+print(nums)
+
+Output
+
+[3,2,1]
+Looping Through a List
+nums = [10,20,30]
+
+for num in nums:
+    print(num)
+
+Using indexes:
+
+for i in range(len(nums)):
+    print(nums[i])

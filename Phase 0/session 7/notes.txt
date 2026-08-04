@@ -1,0 +1,162 @@
+Session 7 – Tuples
+What is a Tuple?
+
+A tuple is a collection of items, just like a list.
+
+The main difference is:
+
+List → Mutable (can be changed)
+Tuple → Immutable (cannot be changed)
+
+List:
+
+fruits = ["Apple", "Banana", "Orange"]
+
+Tuple:
+
+fruits = ("Apple", "Banana", "Orange")
+Why Use Tuples?
+
+Use tuples when the data should not change.
+
+Examples:
+
+Days of the week
+Months of the year
+Coordinates (x, y)
+RGB colors (255, 0, 0)
+Creating Tuples
+numbers = (10, 20, 30)
+
+Mixed data types:
+
+data = (10, 3.14, "Ali", True)
+Single Element Tuple
+
+This is a common mistake.
+
+Wrong:
+
+t = (5)
+
+Python treats this as an integer.
+
+Correct:
+
+t = (5,)
+
+Check:
+
+print(type(t))
+
+Output:
+
+<class 'tuple'>
+Accessing Elements
+
+Same as lists.
+
+fruits = ("Apple", "Banana", "Orange")
+
+print(fruits[0])
+print(fruits[1])
+print(fruits[-1])
+
+Output:
+
+Apple
+Banana
+Orange
+Slicing
+nums = (10, 20, 30, 40, 50)
+
+print(nums[1:4])
+
+Output:
+
+(20, 30, 40)
+Length
+nums = (1, 2, 3)
+
+print(len(nums))
+
+Output:
+
+3
+Loop Through a Tuple
+colors = ("Red", "Green", "Blue")
+
+for color in colors:
+    print(color)
+
+Using indexes:
+
+for i in range(len(colors)):
+    print(colors[i])
+Membership
+fruits = ("Apple", "Banana")
+
+print("Apple" in fruits)
+
+Output:
+
+True
+Tuple Methods
+
+Tuples have only two built-in methods.
+
+count()
+nums = (1, 2, 2, 3, 2)
+
+print(nums.count(2))
+
+Output:
+
+3
+index()
+nums = (10, 20, 30)
+
+print(nums.index(20))
+
+Output:
+
+1
+Tuple Packing
+student = ("Ali", 21, 3.9)
+
+This is called packing.
+
+Tuple Unpacking
+student = ("Ali", 21, 3.9)
+
+name, age, cgpa = student
+
+print(name)
+print(age)
+print(cgpa)
+
+Output:
+
+Ali
+21
+3.9
+Swapping Variables
+
+Without a temporary variable:
+
+a = 10
+b = 20
+
+a, b = b, a
+
+print(a, b)
+
+Output:
+
+20 10
+List vs Tuple
+List	Tuple
+[]	()
+Mutable	Immutable
+More methods	Only count() and index()
+Slightly slower	Slightly faster

@@ -1,0 +1,162 @@
+Session 3 – Conditional Statements (if, elif, else)
+What are Conditional Statements?
+
+Sometimes we want our program to make decisions.
+
+For example:
+
+If age is 18 or more → Allow voting.
+Otherwise → Don't allow voting.
+
+This is where if, elif, and else come in.
+
+The if Statement
+
+Syntax:
+
+if condition:
+    # code
+
+Example:
+
+age = 20
+
+if age >= 18:
+    print("You can vote.")
+
+Output:
+
+You can vote.
+
+If the condition is False, Python skips the block.
+
+age = 15
+
+if age >= 18:
+    print("You can vote.")
+
+print("Program Ended")
+
+Output:
+
+Program Ended
+Indentation
+
+Python uses indentation (spaces) to know which code belongs to an if.
+
+Correct:
+
+if True:
+    print("Hello")
+
+Wrong:
+
+if True:
+print("Hello")
+
+This gives an IndentationError.
+
+if...else
+
+Use else when you want to do something if the condition is False.
+
+age = 16
+
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not Eligible")
+
+Output:
+
+Not Eligible
+if...elif...else
+
+Use elif when you have more than two choices.
+
+Example:
+
+marks = 82
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 80:
+    print("Grade B")
+elif marks >= 70:
+    print("Grade C")
+else:
+    print("Fail")
+
+Output:
+
+Grade B
+Multiple Conditions
+
+You can combine conditions using and and or.
+
+Example:
+
+age = 20
+cgpa = 3.7
+
+if age >= 18 and cgpa >= 3.0:
+    print("Eligible")
+
+Using or
+
+day = "Saturday"
+
+if day == "Saturday" or day == "Sunday":
+    print("Weekend")
+Nested if
+
+An if inside another if.
+
+age = 22
+has_license = True
+
+if age >= 18:
+    if has_license:
+        print("You can drive.")
+Truthy and Falsy Values
+
+Some values are treated as False.
+
+Falsy values:
+
+0
+0.0
+""
+[]
+{}
+None
+False
+
+Everything else is generally considered True.
+
+Example:
+
+name = ""
+
+if name:
+    print("Name entered")
+else:
+    print("Name is empty")
+
+Output:
+
+Name is empty
+Short-Hand if
+
+Single-line if:
+
+age = 20
+
+if age >= 18:
+    print("Adult")
+
+Or:
+
+print("Adult") if age >= 18 else print("Minor")
+
+You don't have to use this style, but it's useful to recognize.

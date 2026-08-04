@@ -1,0 +1,210 @@
+Session 2 – Operators in Python
+What are Operators?
+
+Operators are symbols that perform operations on values.
+
+Example:
+
+a = 10
+b = 5
+
+print(a + b)
+
+Output:
+
+15
+
+Here, + is an operator.
+
+1. Arithmetic Operators
+
+Used for mathematical calculations.
+
+Operator	Meaning	Example
++	Addition	10 + 5
+-	Subtraction	10 - 5
+*	Multiplication	10 * 5
+/	Division	10 / 5
+//	Floor Division	10 // 3
+%	Modulus (Remainder)	10 % 3
+**	Power	2 ** 3
+
+Example:
+
+a = 15
+b = 4
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a ** b)
+
+Output:
+
+19
+11
+60
+3.75
+3
+3
+50625
+Difference Between / and //
+print(10 / 3)
+
+Output
+
+3.3333333333333335
+print(10 // 3)
+
+Output
+
+3
+
+// removes the decimal part.
+
+Modulus %
+
+Returns the remainder.
+
+print(17 % 5)
+
+Output
+
+2
+Power **
+print(5 ** 2)
+
+Output
+
+25
+2. Assignment Operators
+
+Used to assign values.
+
+x = 10
+
+Python also provides shorthand operators.
+
+x = 10
+
+x += 5
+
+print(x)
+
+Output
+
+15
+
+Other examples:
+
+x -= 2
+x *= 3
+x /= 2
+x //= 2
+x %= 3
+x **= 2
+3. Comparison Operators
+
+Comparison operators always return True or False.
+
+Operator	Meaning
+==	Equal
+!=	Not Equal
+>	Greater Than
+<	Less Than
+>=	Greater Than or Equal
+<=	Less Than or Equal
+
+Example:
+
+a = 20
+b = 15
+
+print(a > b)
+print(a < b)
+print(a == b)
+print(a != b)
+
+Output
+
+True
+False
+False
+True
+4. Logical Operators
+
+Used to combine conditions.
+
+AND
+
+Both conditions must be true.
+
+print(True and True)
+
+Output
+
+True
+print(True and False)
+
+Output
+
+False
+OR
+
+At least one condition should be true.
+
+print(True or False)
+
+Output
+
+True
+NOT
+
+Reverses the result.
+
+print(not True)
+
+Output
+
+False
+5. Operator Precedence
+
+Python follows the order of operations.
+
+()
+**
+* / // %
++ -
+Comparison Operators
+not
+and
+or
+
+Example:
+
+print(5 + 3 * 2)
+
+Output
+
+11
+
+Because multiplication happens first.
+
+If you want addition first:
+
+print((5 + 3) * 2)
+
+Output
+
+16
+Small Example
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print(f"Addition: {num1 + num2}")
+print(f"Subtraction: {num1 - num2}")
+print(f"Multiplication: {num1 * num2}")
+print(f"Division: {num1 / num2}")
